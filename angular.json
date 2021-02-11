@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "ponto-inteligente"
+  "defaultProject": "ponto-inteligente",
+  "cli": {
+    "analytics": "5a78f48a-0f7a-44d9-8d0b-200579c5e40c"
+  }
 }
