@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { from } from 'rxjs';
-
+import {
+  LoginRoutingModule,
+} from './autentcacao/login/login-routing.module';
 
 
 @NgModule({
@@ -21,7 +23,7 @@ import { from } from 'rxjs';
     MatButtonModule,
     BrowserAnimationsModule,
     LoginModule,
-
+    LoginRoutingModule,
 
     AppRoutingModule //sempre o ultimo
   ],
