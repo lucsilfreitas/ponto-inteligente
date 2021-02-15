@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
+import { LoginComponent } from './components/login/login.component';
+import { LogarComponent } from './components/logar.component';
 
-export const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+export const LoginRoutes: Routes = [
+	{
+		path: 'login',
+		component: LogarComponent,
+		children: [{ path: '', component: LoginComponent }]
+	}
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }) ],
+  imports: [ RouterModule.forChild(LoginRoutes) ],
   exports: [ RouterModule ]
 })
-export class AppRoutingModule {}
+export class LoginRoutingModule {
+}
